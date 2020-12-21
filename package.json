@@ -1,5 +1,5 @@
 {
-  "name": "military_service_counter",
+  "name": "profile_counter",
   "version": "1.0.0",
   "description": "Counting days left to finish my military service",
   "main": "app.js",
@@ -11,7 +11,7 @@
     "nodemon": "^2.0.6"
   },
   "scripts": {
-    "start": "node run app",
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {

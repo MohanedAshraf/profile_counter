@@ -19,12 +19,14 @@ function getCountImage(count) {
     `, '');
 
   
-    return `<?xml version="1.0" encoding="UTF-8"?>
+    return `
     <svg width="${PLACES * 32}px" height="30px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>Count</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         ${parts}
-        </g>`
+        </g>
+        </svg>
+        `
 }
 
 
@@ -39,6 +41,6 @@ const counter = moment("2021-12-01").diff(moment(), "days")
     res.send(getCountImage(counter));
 })
 
-const listener = app.listen(process.env.PORT , () => {
+const listener = app.listen(process.env.PORT || 3000, () => {
   console.log('Your app is listening on port ' + listener.address().port)
 })

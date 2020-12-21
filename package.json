@@ -1,0 +1,22 @@
+{
+  "name": "military_service_counter",
+  "version": "1.0.0",
+  "description": "Counting days left to finish my military service",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node run app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "12.18.3"
+  },
+  "author": "",
+  "license": "ISC"
+}

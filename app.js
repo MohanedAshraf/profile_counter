@@ -30,7 +30,7 @@ function getCountImage(count) {
 }
 
 
-app.get('/count.svg', (req, res) => {
+app.get('/', (req, res) => {
     
 const counter = moment("2021-12-01").diff(moment(), "days")
     res.set({
